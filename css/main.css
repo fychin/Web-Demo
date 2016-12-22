@@ -1,0 +1,278 @@
+h2 {
+	font-family: 'Francois One', sans-serif;
+	font-size: 40px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 150%;
+}
+
+/* Scoll to Top Icon */
+#scroll-top {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 9999;
+	cursor: pointer;
+	padding: 0 7px;
+	background-color: #182B49;
+	border-radius: 50%;
+	opacity: 0.5;
+	color: white;
+	display: none;
+}
+
+#scroll-top i {
+	font-size: 33px;
+}
+
+#scroll-top:hover {
+	opacity: 1;
+}
+
+/* Top navbar */
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #182B49;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s; /* animation */
+	font-size: 17px;
+	font-family: 'Varela Round', sans-serif;
+	text-shadow: 2px 2px #006699;
+}
+
+ul.topnav li a:hover {
+	background-color: #006699;
+	color: #99ddff;
+}
+
+ul.topnav li.icon {
+	display: none;	/* hide menu dropdown icon by default */
+}
+
+/* Top navbar media queries */
+@media screen and (max-width: 680px) {
+	ul.topnav li:not(:first-child){
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+/* Heading & Main Title */
+#header {
+	background-image: url('../img/bcg.jpg');
+	background-size: cover;
+	display: block;
+	text-align: center;
+
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.profile-img {
+	margin-top: 60px
+}
+
+#header h1 {
+	color: white;
+	font-family: "Permanent Marker", sans-serif;
+	font-size: 70px;
+	padding: 20px 0 70px 0;
+	text-shadow: 4px 5px #000000
+}
+
+.section-bar {
+	width: 100%;
+	height: 30%;
+	background-color: #006699;
+	color: white;
+}
+
+#home p {
+	margin: 15px 0 15px 0;
+}
+
+#home li {
+	list-style-type: none;
+	display: inline;
+	padding: 0 20px;
+}
+
+.contact-btn i {
+	font-size: 25px
+}
+
+@media screen and (max-width: 680px) {
+	#home li {
+		width: 33.33333%;
+	}
+}
+
+.container section {
+	margin-bottom: 40px;
+}
+
+/* Education */
+@font-face {
+	font-family: "Rotis Serif";
+	src: url('../fonts/ufonts.com_agfa-rotis-serif.ttf') format("truetype");
+}
+
+#school {
+	margin-left: 35px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Rotis Serif", sans-serif;
+	color: #182B49;
+}
+
+#school u {
+	text-decoration: none;
+	border-bottom: 2px solid #C69214;
+}
+
+#date {
+	margin: 15px;
+	float: right;
+}
+
+.major {
+	padding-left: 35px;
+}
+
+/* Experience */
+.company-name {
+	float: right;
+	margin-right: 15px;
+}
+
+#softinn:hover {
+	padding: 0 2px;
+	background-color: #8ebc00;
+	color: white;
+	text-decoration: none;
+}
+
+.subtitle {
+	padding-left: 35px;
+}
+
+.sub-row {
+	margin-top: -10px;
+}
+
+.job-list ul {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.job-list li {
+	padding-bottom: 5px;
+}
+
+/* Relavent Coursework */
+.course-item {
+	padding: 0 0 5px 15px;
+}
+
+.course-item h4 {
+	color: #C69214;
+}
+
+.details {
+	float: right;
+	font-size: 14px;
+	margin: 10px;
+	cursor: pointer;
+	background-color: #182B49;
+	color: #C69214;
+	padding: 0 5px;
+	border-radius: 8%;
+	transition: background-color 0.5s ease;
+}
+
+.details:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #006699;
+}
+
+.course-desc {
+	font-size: 16px;
+	display: none;
+}
+
+.highlight {
+	font-weight: bold;
+}
+
+/* Skill */
+.skill {
+	
+}
+
+/* Footer */
+footer {
+	color: #C69214;
+	background-color: #182B49;
+	padding: 10px;
+}
+
+footer a {
+	color: inherit;
+	background-color: inherit;
+}
+
+footer a:hover {
+	color: white;
+}
