@@ -14,9 +14,11 @@
 		<title>Fu Yang Chin | Personal Website</title>
 		<meta></meta>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/lightbox.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
 		<!-- Favicon -->
 		<link rel="icon" type="img/css" href="img/favicon.ico">
 		<!-- Fonts -->
@@ -48,7 +50,7 @@
 				<img src="http://placehold.it/200x200.jpg" class="img-circle profile-img" alt="profile">
 			</div>
 			<div class="wow bounceInUp">
-				<h1 id="main-title">Hello! I am <br/>Fu Yang Chin</h1>
+				<h1 id="main-title">Hello! I am <br/><span style="font-family: 'Francois One'">Fu Yang Chin</span></h1>
 			</div>
 		</section>
 
@@ -58,13 +60,12 @@
 					<h2>About Me</h2>
 				</div>
 				<p>
-					I am a junior year student at the University of California, San Diego (UCSD), <br/>
-					majoring in Computer Science. I am interested in building web based applications. <br/>
-					My goal is to be a Software Engineer or a Full-Stack Engineer.
+					My name is Fu Yang Chin, a junior year student at the University of California, San Diego (UCSD), <br/>
+					majoring in Computer Science. I like to read about the latest tech news and I am interested in building web based applications. <br/>
+					I plan on pursuing a career in Software Engineering.
 				</p>
 				<ul class="contact-btn">
 					<li><a class="btn btn-info" href="https://www.linkedin.com/in/fu-yang-chin" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-					<!-- <li><button class="btn btn-info"><i class="fa fa-envelope"></i></button></li> -->
 					<li><a class="btn btn-info" target="_blank">Resume</i></a></li>
 					<li><a class="btn btn-info" href="https://github.com/yangf96" target="_blank"><i class="fa fa-github"></i></a></li>
 				</ul>
@@ -87,7 +88,9 @@
 					B.S. Computer Science <br/>
 					Sept 2016 - June 2018 (Expected)
 				</p>
-				<p class="major"></p>
+				<ul class="job-description-list">
+						<li>Provost Honor (Fall 2016)</li>
+				</ul>
 			</section>
 
 			<section id="experience">
@@ -174,16 +177,17 @@
 					<h2>Projects</h2>
 				</div>
 				<div class="row">
-					<div class="col-md-10 col-xs-8">
-						<h4 id="school"><u>UC San Diego</u></h3>
+					<div class="col-md-10">
+						<h4 class="subtitle">Toasty Duels</h4>
+						<p class="project-desc">A 2 player interactive shooting game written in C++, using the SFML library to generate sprites and in-game movements. Implemented "bullets" using linked list and remove bullets on collision from linked list.</p>
 					</div>
-					<div class="col-md-2 col-xs-4">
-						<h5 id="date">La Jolla, CA</h3>
+					<div class="col-md-2 wow bonceInRight">
+						<a href="img/toasty-duels.jpg" data-lightbox="image-1" data-title="Toasty Duels 2D Game"><img width="200" class="img-responsive" src="img/toasty-duels.jpg"></a>
 					</div>
 				</div>
 			</section>
 
-			<section id="skill">
+			<section id="skills">
 				<div class="section-bar text-center">
 					<h2>Skills</h2>
 				</div>
@@ -194,11 +198,11 @@
 					</div>
 					<div class="col-md-4 skill">
 						<h4>Tools:</h4>
-						<p>Git, Visual Studio, Eclipse</p>
+						<p>Git, Visual Studio, Eclipse, LiteDb(NoSQL database)</p>
 					</div>
 					<div class="col-md-4 skill">
-						<h4>Language:</h4>
-					<p>English, Chinese, Malay</p>
+						<h4>Others:</h4>
+					<p>Public Speaking, English, Chinese, Malay</p>
 					</div>
 				</div>							
 			</section>
@@ -228,6 +232,24 @@
 				</div>
 			</section>
 
+			<section id="contact">
+				<div class="section-bar text-center">
+					<h2>Contact</h2>
+				</div>
+				<p class="text-center contacts">Questions? Please contact me at <a href="mailto:fychin@ucsd.edu">fychin@ucsd.edu</a>!</p>
+				<div class="row contacts">
+					<div class="col-md-4 col-xs-4 text-center">
+						<a href="https://www.linkedin.com/in/fu-yang-chin" class="btn btn-info btn-contact"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+					<div class="col-md-4 col-xs-4 text-center">
+						<a href="mailto:fychin@ucsd.edu" class="btn btn-info btn-contact"><i class="fa fa-envelope"></i></a>
+					</div>
+					<div class="col-md-4 col-xs-4 text-center">
+						<a class="btn btn-info btn-contact" href="https://github.com/yangf96" target="_blank"><i class="fa fa-github"></i></a>
+					</div>
+					
+				</div>							
+			</section>
 		</div>
 
 		<footer class="text-center">
@@ -238,9 +260,10 @@
 	<!--Javascripts-->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/parallax.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 
 
